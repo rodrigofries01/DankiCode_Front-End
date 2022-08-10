@@ -77,9 +77,9 @@ header nav.desktop ul {
 
 header nav.desktop ul li {
   float: left;
-  font-size: 23px;
+  font-size: 28px;
   font-style: italic;
-  padding: 0 23px;
+  padding: 0 28px;
 }
 
 header nav.desktop a {
@@ -184,12 +184,10 @@ section.veiculos-destaque .container {
 
 }
 
-.vitrine-destaque a {
-  margin-left: 8px;
+.btn1 {
   color: white;
   font-style: italic;
   font-size: 24px;
-  margin-top: 10px;
   text-align: center;
   display: block;
   line-height: 40px;
@@ -197,6 +195,11 @@ section.veiculos-destaque .container {
   background-color: #eb2d2d;
   text-decoration: none;
   border-bottom: 5px solid #b21e1e;
+}
+
+.vitrine-destaque a {
+  margin-left: 8px;
+  margin-top: 10px;
 }
 
 .line-titulo {
@@ -214,97 +217,154 @@ section.veiculos-destaque .container {
   background: black;
 }
 
-section.veiculos-destaque .line-titulo h2 {
+.line-titulo h2 {
   position: relative;
   background: white;
   display: inline-block;
   padding: 0 20px;
   text-align: center;
-  font-size: 27px;
+  font-size: 28px;
   font-style: italic;
   text-transform: uppercase;
 }
 
-
-@media screen and (max-width: 1392px) {
-  section.banner {
-    background-size: cover;
-    background-position: 100px center;
-    height: 80vh;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(4) {
-    width: 400px
-  }
-
-  .text-banner .text-banner-single:nth-of-type(3) {
-    width: 15%;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(2) {
-    width: 20%;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(1) {
-    width: 30%;
-  }
+.servicos-descricao {
+  display: flex;
 }
 
-@media screen and (max-width: 1392px) {
-  section.banner {
-    background-size: cover;
-    background-position: 100px center;
-    height: 80vh;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(4) {
-    width: 400px
-  }
-
-  .text-banner .text-banner-single:nth-of-type(3) {
-    width: 20%;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(2) {
-    width: 29%;
-  }
-
-  .text-banner .text-banner-single:nth-of-type(1) {
-    width: 50%;
-  }
+.half1 {
+  width: 50%;
+  padding: 90px 0;
+  text-align: right;
+  background: #242424;
+  color: white;
+  font-size: x-large;
 }
 
-@media screen and (max-width: 768px) {
-  section.banner {
-    background-size: cover;
-    background-position: 100px center;
-    height: 80vh;
-  }
+.half1-wraper {
+  padding-right: 250px;
+  display: inline-block;
+  text-align: left;
+}
 
-  nav.desktop {
-    display: none;
-  }
+.half1-wraper h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+}
 
-  nav.mobile {
-    display: block;
-  }
+.half1-wraper ul {
+  display: inline-block;
+  margin-top: 20px;
+}
 
-  .text-banner .text-banner-single:nth-of-type(4) {
-    width: 395px
-  }
+.half1-wraper li {
+  margin-left: 15px;
+}
 
-  .text-banner .text-banner-single:nth-of-type(3) {
-    width: 40%;
-  }
+.half1-wraper a {
+  margin-left: 40px;
+  display: inline-block;
+  vertical-align: bottom;
+}
 
-  .text-banner .text-banner-single:nth-of-type(2) {
-    width: 60%;
-  }
+.half2 {
+  width: 50%;
+  padding: 90px 100px;
+  background: #eb2d2d;
+  color: white;
+}
 
-  .text-banner .text-banner-single:nth-of-type(1) {
-    width: 90%;
-  }
+.half2 h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
 
+.half2 .depoimento-single {
+  margin-top: 19px;
+}
+
+.depoimento-single p {
+  font-size: 22px;
+}
+
+.navigation {
+  float: left;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.arrows {
+  float: left;
+}
+
+.navigation img {
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.nome-depoimento {
+  float: right;
+  color: #252525;
+  font-size: 23px;
+}
+
+section.contato {
+  padding: 80px 2%;
+}
+
+section.contato form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section.contato .input-wraper {
+  float: left;
+  padding: 10px;
+  margin-top: 7px;
+}
+
+section.contato input[type=text] {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+section.contato textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 120px;
+  padding: 8px;
+  resize: none;
+}
+
+
+
+section.contato input[type=submit] {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  cursor: pointer;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .vitrine-destaque {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -362,11 +422,112 @@ section.veiculos-destaque .line-titulo h2 {
 
 }
 
-@media screen and (max-width: 480px) {
-  .vitrine-destaque {
+@media screen and (max-width: 768px) {
+  section.servicos-descricao {
+    flex-direction: column;
+  }
+
+  .half1 {
+    text-align: left;
+  }
+
+  .half1-wraper {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .half1,
+  .half2 {
     width: 100%;
+    padding: 80px 4%;
+  }
+
+  section.banner {
+    background-size: cover;
+    background-position: 100px center;
+    height: 80vh;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(4) {
+    width: 395px
+  }
+
+  .text-banner .text-banner-single:nth-of-type(3) {
+    width: 40%;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(2) {
+    width: 60%;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(1) {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .half1-wraper a {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .half1 {
+    text-align: center;
+  }
+
+  .half1-wraper {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .half1-wraper a {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1392px) {
+  section.banner {
+    background-size: cover;
+    background-position: 100px center;
+    height: 80vh;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(4) {
+    width: 400px
+  }
+
+  .text-banner .text-banner-single:nth-of-type(3) {
+    width: 20%;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(2) {
+    width: 29%;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(1) {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
 
 
 /* .material-symbols-outlined {
