@@ -54,7 +54,7 @@ nav.mobile ul {
   left: 0;
   top: 95px;
   border-bottom: 2px solid #eb2d2d;
-  z-index: 999;
+  */ z-index: 999;
   position: absolute;
   text-align: center;
   background-color: white;
@@ -87,8 +87,136 @@ header nav.desktop a {
   text-decoration: none;
 }
 
+.line-titulo {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.ln1 {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 15px;
+  background: black;
+}
+
+.line-titulo h2 {
+  position: relative;
+  background: white;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 /* CONTEUDO */
 
+section.venda {
+  min-height: 90%;
+  padding: 90px 0;
+}
+
+.content-venda {
+  margin-top: 40px;
+  margin-left: -200px;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+}
+
+.search1 h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: normal;
+}
+
+.search1 .barra-preco {
+  width: 100%;
+  height: 20px;
+  background: white;
+  border: 1px solid #777;
+  border-radius: 20px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.barra-preco-fill {
+  position: absolute;
+  left: 0;
+  top: -0.5px;
+  width: 30%;
+  height: 18px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.pointer-barra {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: calc(30% - 13px);
+  top: -3px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+  border: 1px solid #777;
+}
+
+.valor-pesquisa {
+  margin-top: 8px;
+}
+
+.valor-pesquisa p {
+  color: black;
+  font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1) {
+  float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2) {
+  float: right;
+}
+
+.search2 {
+  margin-top: 40px;
+}
+
+.search2 h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: normal;
+}
+
+.form-venda-wraper {
+  margin-top: 5px;
+}
+
+.form-venda-wraper input[type=checkbox] {
+  display: none;
+}
+
+.form-venda-wraper label {
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-venda-wraper span {
+  vertical-align: top;
+  padding: 0 10px;
+  display: inline-block;
+}
 
 
 /* RODAPE */
