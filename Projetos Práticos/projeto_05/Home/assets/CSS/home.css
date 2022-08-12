@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ section.banner {
 }
 
 .text-banner .text-banner-single:nth-of-type(4) {
-  width: 33%;
+  width: 34.5%;
   height: 60px;
   position: relative;
   left: -29px;
@@ -163,8 +163,8 @@ section.veiculos-destaque .container {
 .vitrine-destaque .carro-img {
   width: 100%;
   padding-top: 100%;
-  background-size: 95% 95%;
-  border: 8px solid white;
+  background-size: 95% 100%;
+  margin: 10px 10px 0 10px;
   background-repeat: no-repeat;
 }
 
@@ -191,7 +191,21 @@ section.veiculos-destaque .container {
   text-align: center;
   display: block;
   line-height: 40px;
-  width: 150px;
+  width: 96%;
+  background-color: #eb2d2d;
+  text-decoration: none;
+  border-bottom: 5px solid #b21e1e;
+}
+
+.btn2 {
+  color: white;
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  width: 40%;
   background-color: #eb2d2d;
   text-decoration: none;
   border-bottom: 5px solid #b21e1e;
@@ -399,7 +413,7 @@ footer p {
   color: white;
   font-size: 23px;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 
