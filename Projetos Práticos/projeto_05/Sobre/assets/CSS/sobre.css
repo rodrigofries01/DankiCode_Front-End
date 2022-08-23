@@ -87,6 +87,8 @@ header nav.desktop a {
   text-decoration: none;
 }
 
+/* LINHA ================================================*/
+
 .line-titulo {
   max-width: 1400px;
   margin: 0 auto;
@@ -113,201 +115,58 @@ header nav.desktop a {
   text-transform: uppercase;
 }
 
-/* CONTEUDO */
+/* CONTEUDO =================================================*/
 
-section.veiculos-destaque {
-  padding: 90px 2%;
-}
-
-section.veiculos-destaque .container {
-  max-width: 2000px;
-  padding: 40px 0;
-  border: 2px solid rgb(229, 233, 18);
-}
-
-.vitrine-destaque {
-  float: left;
-  width: 25%;
-}
-
-.vitrine-destaque .carro-img {
-  width: 100%;
-  padding-top: 100%;
-  background-size: 95% 95%;
-  margin: 10px 10px -10px 10px;
-  background-repeat: no-repeat;
-}
-
-.vitrine-destaque h2 {
-  padding-left: 8px;
-  color: black;
-  font-style: italic;
-  font-size: 25px;
-}
-
-.vitrine-destaque p {
-  padding-top: 8px;
-  padding-left: 8px;
-  color: #353535;
-  font-size: 18px;
-  font-style: italic;
-
-}
-
-.btn1 {
-  color: white;
-  font-style: italic;
-  font-size: 24px;
-  text-align: center;
-  display: block;
-  line-height: 40px;
-  width: 95%;
-  background-color: #eb2d2d;
-  text-decoration: none;
-  border-bottom: 5px solid #b21e1e;
-  margin-bottom: 1px;
-}
-
-.vitrine-destaque a {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-section.venda {
+section.sobre{
   min-height: 90%;
-  padding: 70px 0;
+  padding: 60px 2% 20px 2%;
 }
 
-.content-venda {
-  margin-top: 40px;
-  margin-left: 20px;
+section.sobre .container{
+  max-width: 840px;
+  margin-top: 30px;
 }
 
-.sidebar {
-  float: left;
-  width: 25%;
-}
-
-.search1 {
-  width: 90%;
-}
-
-.search1 h2 {
-  font-size: 24px;
-  color: black;
-  font-weight: normal;
-}
-
-.search1 .barra-preco {
+section.sobre .img-destaque-sobre{
   width: 100%;
-  height: 20px;
-  background: white;
-  border: 1px solid #777;
-  border-radius: 20px;
-  margin-top: 8px;
-  position: relative;
+  padding-top: 60%;
+  background-color: rgb(220, 220, 220);
 }
 
-.barra-preco-fill {
-  position: absolute;
-  left: 0;
-  top: -0.5px;
-  width: 30%;
-  height: 18px;
-  border-radius: 20px;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
-}
-
-.pointer-barra {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: calc(30% - 13px);
-  top: -3px;
-  border-radius: 8px;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
-  border: 1px solid #777;
-}
-
-.valor-pesquisa {
-  margin-top: 8px;
-}
-
-.valor-pesquisa p {
-  color: black;
-  font-size: 15px;
-}
-
-.valor-pesquisa p:nth-of-type(1) {
-  float: left;
-}
-
-.valor-pesquisa p:nth-of-type(2) {
-  float: right;
-}
-
-.search2 {
-  margin-top: 40px;
-}
-
-.search2 h2 {
-  font-size: 24px;
-  color: black;
-  font-weight: normal;
-}
-
-.form-venda-wraper {
-  margin-top: 5px;
-}
-
-.form-venda-wraper input[type=checkbox] {
-  display: none;
-}
-
-.form-venda-wraper label {
-  cursor: pointer;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  position: relative;
-}
-
-.form-venda-wraper input[type=checkbox]:checked+label>.circle {
-  display: block;
-}
-
-.circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: none;
-  background: black;
-  position: absolute;
-  left: 2.9px;
-  top: 2.7px;
-}
-
-.form-venda-wraper span {
-  vertical-align: top;
-  padding: 0 10px;
-  display: inline-block;
-}
-
-.vitrine-venda {
-  overflow: hidden;
-  float: right;
-  width: 70%;
-}
-
-.vitrine-venda .vitrine-destaque {
+section.sobre .descricao-autor{
   margin-top: 20px;
 }
 
+.descricao-autor h2{
+  font-size: 30px;
+}
 
-/* RODAPE */
+.descricao-autor p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.descricao-autor2{
+  margin-top: 40px;
+}
+
+.img-small{
+  width: 30%;
+  padding-top: 30%;
+  float: left;
+  background-color: rgb(220, 220, 220);
+}
+
+.descricao-autor2 p{
+  float: left;
+  width: 70%;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+
+/* FOOTER ====================================================*/
 
 footer {
   padding: 20px 2%;
@@ -339,17 +198,11 @@ footer p {
   color: white;
   font-size: 23px;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
 }
-
 
 @media screen and (max-width: 480px) {
   .vitrine-destaque {
-    width: 100%;
-  }
-
-  .vitrine-venda {
-    float: left;
     width: 100%;
   }
 }
@@ -357,11 +210,6 @@ footer p {
 @media screen and (max-width: 580px) {
   .text-banner {
     padding: 30px;
-  }
-
-  .vitrine-venda {
-    float: left;
-    width: 100%;
   }
 
   .text-banner-single {
@@ -410,6 +258,16 @@ footer p {
 
   .vitrine-destaque a {
     display: inline-block;
+  }
+
+  .img-small{
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .descricao-autor2{
+    width: 100%;
+    padding: 20px 0 ;
   }
 
 }
@@ -464,26 +322,6 @@ footer p {
     display: block;
   }
 
-  .sidebar {
-    width: 100%;
-    text-align: center;
-  }
-
-  .search1 {
-    display: inline-block;
-  }
-
-  .search2 {
-    text-align: left;
-    display: inline-block;
-  }
-
-  .vitrine-venda {
-    float: left;
-    width: 100%;
-    text-align: center;
-  }
-
   .text-banner .text-banner-single:nth-of-type(4) {
     width: 395px
   }
@@ -508,7 +346,6 @@ footer p {
     margin-left: 0;
     margin-top: 15px;
   }
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -552,17 +389,3 @@ footer p {
   }
 }
 
-
-
-
-
-
-
-
-/* .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-} */

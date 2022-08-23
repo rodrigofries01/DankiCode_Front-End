@@ -122,7 +122,7 @@ section.veiculos-destaque .container {
   padding-top: 8px;
   padding-left: 36px;
   color: #353535;
-  font-size: 18px;
+  font-size: 18 px;
   font-style: italic;
 
 }
@@ -165,8 +165,8 @@ section.venda-single {
 
 section.venda-single .container {
   /* padding: 40px 0; */
-  max-width: 1000px;
-  margin-right: 17.4%;
+  max-width: 1400px;
+  margin-right: 3.4%;
 }
 
 .info-veiculo {
@@ -180,6 +180,8 @@ section.venda-single .container {
   width: 50%;
   margin-left: 15px;
   padding: 20px;
+  vertical-align: top;
+  text-align: left;
   /* border: 1px solid blue; */
 }
 
@@ -192,10 +194,44 @@ section.venda-single .container {
   margin-top: 25px;
 }
 
+.nav-galeria-parent{
+  width: 98%;
+  padding: 0px 10px 0px 25px;
+  position: relative;
+  right: 5px;
+}
+
+.arrow-left-nav{
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-image: url(../imagens/arrow-left.png);
+  background-size: 100% 100%;
+  width: 15px;
+  height: 15px;
+}
+
+.arrow-right-nav{
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-image: url(../imagens/arrow-right.png);
+  background-size: 100% 100%;
+  width: 15px;
+  height: 15px;
+}
+
 .nav-galeria {
   width: 100%;
-  padding: 5px 0px;
+  padding: 4px 0px 0px 0px;
   overflow: hidden;
+  /* box-shadow: 4px 0px 4px 0px #ccc; */
 }
 
 .nav-galeria-wraper {
@@ -212,6 +248,7 @@ section.venda-single .container {
   height: 20px;
   padding-top: calc(33.3% * (100 / 200) * 0.5);
   width: calc(33.3% * (100 / 200));
+  box-shadow: 4px 0px 4px 0px #ccc;
 }
 
 .mini-img:first-child {
@@ -225,7 +262,7 @@ section.venda-single .container {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 1px 11px 11px 0px #ccc;
+  box-shadow: 4px 0px 4px 0px #ccc;
 }
 
 .line-titulo {
@@ -453,8 +490,22 @@ footer p {
   }
 
   .vitrine-destaque a {
-    display: inline-block;
+    display: block;
   }
+
+  .btn2 {
+    color: white;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    width: 45%;
+    background-color: rgb(235, 45, 45);
+    text-decoration: none;
+    border-bottom: 5px solid rgb(178, 30, 30);
+}
 
 }
 
@@ -500,6 +551,20 @@ footer p {
     height: 80vh;
   }
 
+  .btn2 {
+    color: white;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    width: 42%;
+    background-color: rgb(235, 45, 45);
+    text-decoration: none;
+    border-bottom: 5px solid rgb(178, 30, 30);
+}
+
   nav.desktop {
     display: none;
   }
@@ -532,6 +597,20 @@ footer p {
     margin-left: 0;
     margin-top: 15px;
   }
+
+  .btn2 {
+    color: white;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    width: 35%;
+    background-color: rgb(235, 45, 45);
+    text-decoration: none;
+    border-bottom: 5px solid rgb(178, 30, 30);
+}
 }
 
 @media screen and (max-width: 1100px) {
@@ -552,6 +631,12 @@ footer p {
 }
 
 @media screen and (max-width: 1392px) {
+  section.venda-single .container {
+    /* padding: 40px 0; */
+    max-width: 1400px;
+    margin-right: 1.4%;
+  }
+  
   section.banner {
     background-size: cover;
     background-position: 100px center;
@@ -572,5 +657,13 @@ footer p {
 
   .text-banner .text-banner-single:nth-of-type(1) {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1800px){
+  section.venda-single .container {
+    /* padding: 40px 0; */
+    max-width: 1000px;
+    margin-right: 1.4%;
   }
 }
