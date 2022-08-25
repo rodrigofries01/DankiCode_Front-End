@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando TypeOf</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            //array
+            var nome = [];
+
+            nome[0] = 'Rodrigo';
+            nome[100] = 'Fries';
+
+            console.log(nome[0],nome[100]);
+            console.log(typeof(nome));//mostra o que é a variavel
+
+            //objeto
+            var animal = {};
+
+            animal.nome = []; 
+            animal.peso = '3kg';
+            animal.idade = 4;
+            animal['idade'] = 5;
+
+            animal.nome[0] = 'Otis'
+            animal.nome[1] = 'Teddy';
+            animal.nome[2] = 'Filomena';
+
+            console.log(animal.nome[0]);
+            console.log(animal.nome[1]);
+            console.log(animal.nome[2]);
+            console.log(animal.peso);
+            console.log(animal.idade);
+            console.log(typeof(animal));//mostra o que é a variavel
+        
+            //variavel do tipo string
+            var nome = 'Peter';
+            console.log(typeof(nome))//mostra o que é a variavel
+            //tipo number
+            nome = 9;
+            console.log(typeof(nome))//mostra o que é a variavel
+            //boolean
+            nome = true;
+            console.log(typeof(nome))//mostra o que é a variavel
+
+
+        }
+
+
+    </script>
+</body>
+</html>
